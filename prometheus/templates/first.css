@@ -1,0 +1,11 @@
+.form{
+    position: relative;
+    top: 100px;
+    border: solid red;
+    border-radius: 10px;
+    height: 300px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: prometheus-assingnment-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: prometheus-assingnment
+  template:
+    metadata:
+      labels:
+        app: prometheus-assingnment
+    spec:
+      containers:
+      - name: prometheus-assingnment
+        image: natesha2000/pythonboto3
+        ports:
+        - containerPort: 5000
